@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #181818;
+    color: #b3b3b3;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.track {
+    display: flex;
+    align-items: center; /* Center align items vertically */
+    gap: 20px; /* Space between album cover and track details */
+    margin-bottom: 30px;
+    padding: 10px;
+    border-bottom: 1px solid #282828;
+    transition: background 0.2s;
+}
+
+.track:hover {
+    background: #282828;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1DB954;
+    font-size: 2.5em;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+
+audio {
+    width: 100%;
+}
+
+.album {
+    flex-shrink: 0; /* Prevent the album from shrinking */
+    position: relative;
+    cursor: pointer;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: #1DB954;
+    display: none;
+}
+
+.album:hover .play-icon {
+    display: block;
+}
+
+.track-details {
+    flex-grow: 1; /* Allow the track details to take up remaining space */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between title and audio controls */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px; /* Adjust padding for spacing */
+    background: linear-gradient(45deg, #1DB954, #1B5E20);
+    color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.title {
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    gap: 30px; /* Space between links */
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.2s; /* Smooth color transition */
+}
+
+nav a:hover {
+    color: #1B5E20; /* Change color on hover */
+}
+
+.logo {
+    width: auto;    /* Adjust as necessary */
+    height: 40px;   /* Adjust as necessary */
+    margin-right: 20px; /* Space between the logo and title */
+}
+
+#about-us-section {
+    background-color: #1DB954; /* Green background */
+    width: 100%; /* Ensure it spans the full width */
+    padding: 40px 0; /* Vertical padding */
+    box-sizing: border-box; /* Ensure padding doesn't add to the width */
+}
+
+
+.about-content {
+    display: flex;
+    align-items: center; /* Vertically align items in the center */
+    justify-content: space-between;
+    max-width: 1200px; /* Or any suitable width */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 20px; /* Provide some horizontal padding for responsiveness */
+    gap: 30px; /* Space between the image and the paragraph */
+}
+
+
+.about-img {
+    width: 300px; /* Adjust based on your preference and image dimensions */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* A slight shadow for depth */
+}
+
+.about-text {
+    color: #333; /* Dark grey text */
+    flex-grow: 1; /* Allow the text to take up remaining space */
+    font-size: 18px; /* Adjust based on your preference */
+    line-height: 1.6; /* Spacing between lines of text */
+}

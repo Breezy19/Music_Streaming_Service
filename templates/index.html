@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Music Streaming</title>
+    <link rel="stylesheet" href="/Users/mac/Documents/my_music_service/static/styles.css">
+    <script src="/Users/mac/Documents/my_music_service/static/app.js" defer></script>
+</head>
+<body>
+    <div class="header">
+        <img src="/Users/mac/Documents/my_music_service/static/spotify-logo.png" alt="Spotify Logo" class="logo">
+        <div class="title">
+        My Music Stream
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#tracks-section">Tracks</a></li>
+                <li><a href="#about-us-section">About Us</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+                <li><a href="#buy-section">Buy New Track</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="container">
+        <h1>Discover our music without a copyright!</h1>
+
+        <div class="track">
+            <div class="album" onclick="togglePlay('track1')">
+                <img src="/Users/mac/Documents/my_music_service/static/album1.jpg" alt="Album Cover 1" class="album-cover" id="cover-track1">
+            </div>
+            <div class="track-details">
+                <h4>Track 1</h4>
+                <audio controls>
+                    <source src="/Users/mac/Documents/my_music_service/audio/track1.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+
+        <div class="track">
+            <div class="album" onclick="togglePlay('track2')">
+                <img src="/Users/mac/Documents/my_music_service/static/album2.jpg" alt="Album Cover 2" class="album-cover" id="cover-track1">
+            </div>
+            <div class="track-details">
+                <h4>Track 2</h4>
+                <audio controls>
+                    <source src="/Users/mac/Documents/my_music_service/audio/track2.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+
+        <div class="track">
+            <div class="album" onclick="togglePlay('track3')">
+                <img src="/Users/mac/Documents/my_music_service/static/album1.jpg" alt="Album Cover 3" class="album-cover" id="cover-track1">
+            </div>
+            <div class="track-details">
+                <h4>Track 1</h4>
+                <audio controls>
+                    <source src="/Users/mac/Documents/my_music_service/audio/track3.mp3" type="audio/mp3">
+                </audio>
+            </div>
+        </div>
+
+        <div id="about-us-section">
+            <h2>About US</h2>
+            <div class="about-content">
+                <img src="/Users/mac/Documents/my_music_service/static/about-photo.jpg" alt="About Us Photo" class="about-img">
+                <p class="about-text">
+                    Your description about your music streaming service. Talk about your journey, the team, the inspiration behind the service, and any other information you'd like your visitors to know.
+                </p>
+            </div>
+        </div>
+
+        <!-- Add more tracks similarly -->
+
+    </div>
+</body>
+</html>
+
+
